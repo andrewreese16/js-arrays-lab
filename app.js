@@ -8,10 +8,9 @@ Exercise 1: Define an empty array
 Exercise 1 has been completed for you:
 */
 
-const foods = [];  
+const foods = [];
 
-console.log('Exercise 1 result:', foods);
-
+console.log("Exercise 1 result:", foods);
 
 // ------> Exercise 2 <------
 
@@ -25,10 +24,9 @@ Note: 'pizza' should be the first item in the array, followed by 'cheeseburger'.
 Complete Exercise 2 in the space below:
 */
 
-foods.push('pizza', 'cheeseburger')
+foods.push("pizza", "cheeseburger");
 
-console.log('Exercise 2 result:', foods);
-
+console.log("Exercise 2 result:", foods);
 
 // ------> Exercise 3 <------
 
@@ -40,10 +38,9 @@ Exercise 3: Insert at the beginning
 Complete Exercise 3 in the space below:
 */
 
-foods.unshift("taco")
+foods.unshift("taco");
 
-console.log('Exercise 3 result:', foods);
-
+console.log("Exercise 3 result:", foods);
 
 // ------> Exercise 4 <------
 
@@ -58,10 +55,9 @@ Exercise 4: Access an array element
 Complete Exercise 4 in the space below:
 */
 
-const favFood = foods[1]
+const favFood = foods[1];
 
-console.log('Exercise 4 result:', favFood);
-
+console.log("Exercise 4 result:", favFood);
 
 // ------> Exercise 5 <------
 
@@ -73,10 +69,9 @@ Exercise 5: Insert an element between two others
 Complete Exercise 5 in the space below:
 */
 
-foods.splice(2, 0, "tofu")
+foods.splice(2, 0, "tofu");
 
-console.log('Exercise 5 result:', foods);
-
+console.log("Exercise 5 result:", foods);
 
 // ------> Exercise 6 <------
 
@@ -88,10 +83,9 @@ Exercise 6: Replace elements
 Complete Exercise 6 in the space below:
 */
 
-foods.splice(1, 1, 'sushi', 'cupcake');
+foods.splice(1, 1, "sushi", "cupcake");
 
-console.log('Exercise 6 result:', foods);
-
+console.log("Exercise 6 result:", foods);
 
 // ------> Exercise 7 <------
 
@@ -106,10 +100,9 @@ Exercise 7: Using the `slice()` method
 Complete Exercise 7 in the space below:
 */
 
-const yummy = foods.slice(1, 3)
+const yummy = foods.slice(1, 3);
 
-console.log('Exercise 7 result:', yummy);
-
+console.log("Exercise 7 result:", yummy);
 
 // ------> Exercise 8 <------
 
@@ -124,10 +117,9 @@ Exercise 8: Finding an index
 Complete Exercise 8 in the space below:
 */
 
-const soyIdx = foods.indexOf("tofu")
+const soyIdx = foods.indexOf("tofu");
 
-console.log('Exercise 8 result:', soyIdx);
-
+console.log("Exercise 8 result:", soyIdx);
 
 // ------> Exercise 9 <------
 
@@ -145,10 +137,9 @@ Note: The final result should log as:
 Complete Exercise 9 in the space below:
 */
 
-const allFoods = foods.join(' -> ')
+const allFoods = foods.join(" -> ");
 
-console.log('Exercise 9 result:', allFoods);
-
+console.log("Exercise 9 result:", allFoods);
 
 // ------> Exercise 10 <------
 
@@ -163,10 +154,9 @@ Exercise 10: Check for an element
 Complete Exercise 10 in the space below:
 */
 
-const hasSoup = foods.includes('soup')
+const hasSoup = foods.includes("soup");
 
-console.log('Exercise 10 result:', hasSoup);
-
+console.log("Exercise 10 result:", hasSoup);
 
 // ------> Exercise 11 <------
 
@@ -184,16 +174,15 @@ Complete Exercise 11 in the space below:
 
 const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
 
-const odds = []
+const odds = [];
 
-nums.forEach(num => {
-    if (num % 2 !== 0) {
-        odds.push(num)
-    }
-})
+nums.forEach((num) => {
+  if (num % 2 !== 0) {
+    odds.push(num);
+  }
+});
 
-console.log('Exercise 11 result:', odds);
-
+console.log("Exercise 11 result:", odds);
 
 // ------> Exercise 12 <------
 
@@ -216,26 +205,26 @@ Exercise 12: FizzBuzz with arrays
 Complete Exercise 12 in the space below:
 */
 
-const fizz = []
-const buzz = []
-const fizzbuzz = []
+const fizz = [];
+const buzz = [];
+const fizzbuzz = [];
 
-nums.forEach(num => {
-    if (num % 3 === 0 && num % 5 === 0) {
-        fizzbuzz.push(num);
-    
-    }if (num % 3 === 0) {
-        fizz.push(num)
-    }if(num % 5 === 0){
-        buzz.push(num)
-    } 
-})
+nums.forEach((num) => {
+  if (num % 15 === 0) {
+    fizzbuzz.push(num);
+  }
+  else if (num % 3 === 0) {
+    fizz.push(num);
+  }
+  else if (num % 5 === 0) {
+    buzz.push(num);
+  }
+});
 
-console.log('Exercise 12 Results:');
-console.log('  fizz:', fizz);
-console.log('  buzz:', buzz);
-console.log('  fizzbuzz:', fizzbuzz);
-
+console.log("Exercise 12 Results:");
+console.log("  fizz:", fizz);
+console.log("  buzz:", buzz);
+console.log("  fizzbuzz:", fizzbuzz);
 
 // ------> Exercise 13 <------
 
@@ -252,16 +241,15 @@ Complete Exercise 13 in the space below:
 */
 
 const numArrays = [
-	[100, 5, 23],
-	[15, 21, 72, 9],
-	[45, 66],
-	[7, 81, 90]
+  [100, 5, 23],
+  [15, 21, 72, 9],
+  [45, 66],
+  [7, 81, 90],
 ];
 
-const numList = numArrays[numArrays.length -1]
+const numList = numArrays[numArrays.length - 1];
 
-console.log('Exercise 13 result:', numList);
-
+console.log("Exercise 13 result:", numList);
 
 // ------> Exercise 14 <------
 
@@ -276,10 +264,9 @@ Exercise 14: Accessing within nested arrays
 Complete Exercise 14 in the space below:
 */
 
-const num = numArrays[2][1]
+const num = numArrays[2][1];
 
-console.log('Exercise 14 result:', num);
-
+console.log("Exercise 14 result:", num);
 
 // ------> Exercise 15 <------
 
@@ -298,10 +285,10 @@ Complete Exercise 15 in the space below:
 
 let total = 0;
 
-numArrays.forEach(innerArray => {
-    innerArray.forEach(num => {
-        total += num;
-    })
-})
+numArrays.forEach((innerArray) => {
+  innerArray.forEach((num) => {
+    total += num;
+  });
+});
 
-console.log('Exercise 15 result:\n', total);
+console.log("Exercise 15 result:\n", total);
